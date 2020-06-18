@@ -9,7 +9,7 @@ app = Flask(__name__,static_folder=os.path.abspath('static/'))
 def engine_status():
     context=dict()
     context["qido_url"]=os.environ.get("QIDO_URL","")
-    context["workflow_url"]=os.environ.get("WORKFLOW_URL","")
+    context["workflow_url"]=os.environ.get("WORKFLOW_URLz Tester URL","")
     context["imaging_url"]=os.environ.get("IMAGING_URL","")
     context["imaging_host_url"]=os.environ.get("IMAGING_HOST_URL","")
     return render_template("index.html",data=context)
